@@ -1,9 +1,12 @@
-import React from "react";
-
-export default function Page({ params }: { params: { id: string } }) {
+export default async function Page({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const { id } = await params;
   return (
     <>
-      <div>blog id is {params.id}</div>
+      <div>blog id is {id}</div>
     </>
   );
 }
