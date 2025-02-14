@@ -11,6 +11,9 @@ export default function Home() {
         <div className="button">
           <Link href="/shopping">To shopping</Link>
         </div>
+        <div className="button">
+          <Link href="/login">To login</Link>
+        </div>
       </div>
     </>
   );

@@ -15,9 +15,6 @@ export default function Page() {
       <div className="button">
         <Link href="/blog/1/2">To blog [...id]</Link>
       </div>
-      <div className="button">
-        <Link href="/blog/1/2/3/4">To blog [[...id]]</Link>
-      </div>
     </div>
   );
 }

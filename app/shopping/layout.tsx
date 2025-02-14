@@ -1,3 +1,5 @@
+'use client'
+import { useSelectedLayoutSegment } from "next/navigation";
 import React from "react";
 
 export default function Layout({
@@ -9,6 +11,9 @@ export default function Layout({
   items: React.ReactNode;
   analytics: React.ReactNode;
 }) {
+  const aaa = useSelectedLayoutSegment('items');
+  console.log("aaa", aaa);
+
   return (
     <>
       <h2>shopping Layout</h2>
